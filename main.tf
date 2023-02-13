@@ -5,5 +5,5 @@
 #}
 
 module "network" {
-  source         = "https://github.com/rajrgithub/10-tf-module-vpc.git"
+  source         = "github.com/rajrgithub/10-tf-module-vpc"
 }
