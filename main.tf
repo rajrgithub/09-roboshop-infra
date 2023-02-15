@@ -14,5 +14,6 @@ module "network" {
  # subnets_cidr = each.value.subnets_cidr
   public_subnets_cidr  = each.value.public_subnets_cidr
   private_subnets_cidr = each.value.private_subnets_cidr
+  availability_zones   = each.value.availability_zones
 }
 
