@@ -25,6 +25,6 @@ module "subnets" {
 #  value = "module.vpc"
 #}
 
-output "vpc_id" {
-  value = lookup(module.vpc, each.value.vpc_name, null)
-}
+#output "vpc_id" {
+#  value = lookup(module.vpc, each.value.vpc_name, null)
+#}
