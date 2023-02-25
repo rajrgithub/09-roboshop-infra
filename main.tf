@@ -82,6 +82,9 @@ module "apps" {
   source = "github.com/rajrgithub/16-tf-module-app"
   env    = var.env
 
+  # app trying to connect even before DB is creating
+  depends_on = [module.docdb, module.rds, module.rabbitmq, module.alb, module.rds, module.elasticache]
+
   for_each         = var.apps
   subnet_ids       = lookup(lookup(lookup(lookup(module.vpc, each.value.vpc_name, null), each.value.subnets_type, null), each.value.subnets_name, null), "subnet_ids", null)
   vpc_id           = lookup(lookup(module.vpc, each.value.vpc_name, null), "vpc_id", null)
