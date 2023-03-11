@@ -123,7 +123,7 @@ output "alb" {
 
 
 // Load Test Machine
-/*
+
 resource "aws_spot_instance_request" "load" {
   instance_type          = "t3.medium"
   ami                    = "ami-0a017d8ceb274537d"
@@ -152,4 +152,4 @@ resource "null_resource" "apply" {
       "docker pull robotshop/rs-load"
     ]
   }
-}*/
+}
