@@ -127,7 +127,8 @@ output "alb" {
 
 resource "aws_spot_instance_request" "load" {
   instance_type          = "t3.medium"
-  ami                    = "ami-0a017d8ceb274537d"
+  //ami                    = "ami-0a017d8ceb274537d"
+  ami                    = "ami-0089b8e98cd95257d"
   subnet_id              = "subnet-09123df03d7e85b21"
   vpc_security_group_ids = ["sg-077d105bcbc7b50ea"]
   wait_for_fulfillment   = true
