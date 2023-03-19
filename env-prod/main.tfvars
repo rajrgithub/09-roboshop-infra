@@ -2,6 +2,7 @@ env            = "prod"
 default_vpc_id = "vpc-01cb60de8c920e6a8"
 bastion_cidr   = ["172.31.1.71/32"]
 monitor_cidr   = ["172.31.13.17/32"]
+hosted_zone    = "rajdevops.online"
 
 vpc = {
   main = {
